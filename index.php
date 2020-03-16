@@ -102,7 +102,7 @@
                 } 
 
                 echo '<tr class="user">';
-                echo '  <td class="rank">'.number_format($donor['rank']).'</td>';
+                echo '  <td class="rank">'.$donor['rank'].'</td>';
                 echo '  <td class="name"><a href="https://stats.foldingathome.org/donor/'.$donor['id'].'">'.$donor['name'].'</a></td>';
                 echo '  <td class="credit"><a>'.number_format($donor['credit']).'</a></td>';
                 echo '  <td class="wus"><a>'.$donor['wus'].'</a></td>';
