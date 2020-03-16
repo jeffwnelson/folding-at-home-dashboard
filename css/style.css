@@ -1,0 +1,60 @@
+html {
+  background-color: #454545;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  width: 800px;
+  margin: auto;
+  overflow-y: scroll;
+}
+
+#content {
+  padding: 2em;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+#content h1 {
+  color: #6796ad;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+}
+
+#content table.results {
+  width: 100%;
+}
+
+#content table.results th {
+  background-color: #f5f5dc;
+}
+
+#content table.results th,
+#content table.results td {
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px;
+}
+
+#content table.results .user:nth-child(even) > td {
+  background-color: #fff;
+}
+
+#content table.results .user:nth-child(odd) > td {
+  background-color: #dcdcdc;
+}
+
+#content table.results .name {
+  text-align: left;
+  max-width: 200px;
+}
+#content table.results tr.description td {
+  text-align: center;
+  background-color: #f5f5dc;
+}
+
+#content.team-page .team-info th {
+  text-align: left;
+}
