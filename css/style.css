@@ -49,6 +49,7 @@ body {
 #content table.results .name {
   text-align: left;
   max-width: 200px;
+  padding-left: 2px;
 }
 #content table.results tr.description td {
   text-align: center;
