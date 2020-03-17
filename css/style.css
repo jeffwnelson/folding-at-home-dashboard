@@ -49,8 +49,9 @@ body {
 #content table.results .name {
   text-align: left;
   max-width: 200px;
-  padding-left: 2px;
+  padding: 2px;
 }
+
 #content table.results tr.description td {
   text-align: center;
   background-color: #f5f5dc;
@@ -62,7 +63,6 @@ body {
 
 #footer {
   text-align: center;
-  padding: 2em;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
   overflow: hidden;
 }
