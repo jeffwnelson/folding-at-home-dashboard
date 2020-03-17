@@ -103,7 +103,7 @@
       </table>
     </div>
   </div>
-  <div class="footer">
+  <div class="row">
     <div class="col-md-2"></div>
       <div class="mt-2 col-md-8" align="center">
         <h6>Made with <font color="#ff0000"><i class="fas fa-heart"></i></font> by the NETWAR Staff</h6>
