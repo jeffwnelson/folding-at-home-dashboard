@@ -5,6 +5,7 @@ html {
 
 body {
   width: 800px;
+  background-color: #f5f5f5;
   margin: auto;
   overflow-y: scroll;
 }
