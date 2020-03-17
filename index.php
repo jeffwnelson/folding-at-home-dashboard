@@ -1,5 +1,8 @@
 <?php
 
+  // Remove PHP version
+  header_remove('X-Powered-By');
+
   // Grab our JSON file for parsing
   $jsonurl='folding-data.json'; 
   $json = file_get_contents($jsonurl,0,null,null);  

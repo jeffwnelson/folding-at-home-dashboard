@@ -5,6 +5,8 @@
  * Data is saved to JSON files and Log files
  */
 
+// Remove PHP version
+header_remove('X-Powered-By');
 
 // Configure a few things
 date_default_timezone_set('America/Chicago');
