@@ -4,9 +4,9 @@
   header_remove('X-Powered-By');
 
   // Grab our JSON file for parsing
-  $jsonurl='folding-data.json'; 
-  $json = file_get_contents($jsonurl,0,null,null);  
-  $data = json_decode($json, JSON_PRETTY_PRINT); 
+  $jsonurl='folding-data.json';
+  $json = file_get_contents($jsonurl,0,null,null);
+  $data = json_decode($json, JSON_PRETTY_PRINT);
 
   // echo the timestamp from the log file
   $lastgood = file_get_contents("last.log");
@@ -17,11 +17,6 @@
 <head>
   <title>NETWAR Folding@Home Stats</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
