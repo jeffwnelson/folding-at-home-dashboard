@@ -27,11 +27,8 @@
 
 <body>
   <div class="team-page" id="content">
-    <div class="alert alert-info alert-dismissible fade show" role="alert">
+    <div class="alert alert-info" role="alert">
       <strong>Stats last updated:</strong> <?php echo $lastgood; ?>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
     </div>
     <div class="content">
       <h1>Team:
