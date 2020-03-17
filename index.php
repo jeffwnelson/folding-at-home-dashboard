@@ -103,9 +103,6 @@
       </table>
     </div>
   </div>
-  <div class="alert alert-success" role="alert">
-    <a href="folding-data.json" class="alert-link">JSON available here</a>.
-  </div>
   <div class="row">
     <div class="col-md-2"></div>
       <div class="mt-2 col-md-8" align="center">
