@@ -18,19 +18,20 @@
   <title>NETWAR Folding@Home Stats</title>
   <meta charset="utf-8">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <div class="team-page" id="content">
-  <div class="alert alert-info alert-dismissible fade show" role="alert">
-    <strong>Stats last updated:</strong> <?php echo $lastgood; ?>
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <strong>Stats last updated:</strong> <?php echo $lastgood; ?>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <div class="content">
       <h1>Team:
         <?php echo $data['name']; ?>
@@ -111,10 +112,15 @@
       </table>
     </div>
   </div>
-</div>
-<div class="alert alert-success" role="alert">
-  <a href="folding-data.json" class="alert-link">JSON available here</a>.
-</div>
+  <div class="alert alert-success" role="alert">
+    <a href="folding-data.json" class="alert-link">JSON available here</a>.
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+      <div class="mt-2 col-md-8" align="center">
+        <h6>Made with <font color="#ff0000"><i class="fas fa-heart"></i></font> by the NETWAR Staff</h6>
+      </div>
+      <div class="col-md-2"></div>
+  </div>
 </body>
-
 </html>
