@@ -56,13 +56,11 @@
           </tr>
           <tr>
             <th>Grand Score</th>
-            <td><a href="https://apps.foldingathome.org/awards?team=237887&amp;type=score">
-                <?php echo $data['credit']; ?></a></td>
+            <td><?php echo $data['credit']; ?></td>
           </tr>
           <tr>
             <th>Work Unit Count</th>
-            <td><a href="https://apps.foldingathome.org/awards?team=237887&amp;type=wus">
-                <?php echo $data['wus']; ?></a></td>
+            <td><?php echo $data['wus']; ?></td>
           </tr>
           <tr>
             <th>Team Ranking</th>
@@ -70,11 +68,6 @@
               <?php echo $data['rank']; ?> of
               <?php echo $data['total_teams']; ?>
             </td>
-          </tr>
-          <tr>
-            <th>Homepage</th>
-            <td><a target="_blank" href="<?php echo $data['url']; ?>">
-                <?php echo $data['url']; ?></a></td>
           </tr>
         </tbody>
       </table>
@@ -100,7 +93,7 @@
 
                 echo '<tr class="user">';
                 echo '  <td class="rank">'.$donor['rank'].'</td>';
-                echo '  <td class="name"><a href="https://stats.foldingathome.org/donor/'.$donor['id'].'">'.$donor['name'].'</a></td>';
+                echo '  <td class="name">'.$donor['name'].'</a></td>';
                 echo '  <td class="credit"><a>'.number_format($donor['credit']).'</a></td>';
                 echo '  <td class="wus"><a>'.$donor['wus'].'</a></td>';
                 echo '</tr>';
