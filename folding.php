@@ -13,6 +13,7 @@ date_default_timezone_set('America/Chicago');
 $file = "folding-data.json";
 $logfile = "folding-data.log";
 $lastsuccess = "last.log";
+$failures = "failures.log";
 $timestamp = date("M d Y h:i:s A");
 
 // Set HTTP header
@@ -44,8 +45,12 @@ $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 if ($httpCode == 200) {
   file_put_contents($file, $result);
   file_put_contents($lastsuccess, $timestamp);
+  file_put_contents($failures, 0);
   $logstatus = "Stats pulled successfully. Updating.";
 } else {
+  $count = (int)file_get_contents($failures);
+  $count++;
+  file_put_contents($failures, $count);
   $logstatus = "Could not pull stats from F@H. No changes.";
 }
 

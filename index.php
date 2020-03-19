@@ -10,6 +10,17 @@
 
   // echo the timestamp from the log file
   $lastgood = file_get_contents("last.log");
+
+  // echo the failure count from the failure log
+  $failures = (int)file_get_contents("failures.log");
+
+  // Check if failures message is needed
+  if ($failures == 0) {
+    $failuremessage = "";
+  } else {
+    $failuremessage = "(Failed attempts since: $failures)";
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,17 +29,19 @@
   <title>NETWAR Folding@Home Stats</title>
   <meta charset="utf-8">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <div class="team-page" id="content">
-    <div class="alert alert-info" role="alert">
-      <strong>Stats last updated:</strong> <?php echo $lastgood; ?>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <strong>Stats last updated:</strong> <?php echo $lastgood; ?> <?php echo $failuremessage; ?>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
     <div class="content">
       <h1>Team:
